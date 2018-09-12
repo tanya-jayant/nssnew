@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title -->
+    <title>@ViewBag.Title</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="~/wwwroot/img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="~/wwwroot/css/style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="~/wwwroot/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/wwwroot/css/remodal.css">
+    <link rel="stylesheet" href="~/wwwroot/css/remodal-default-theme.css">
+    <link rel="stylesheet" href="~/wwwroot/css/tingle.css">
+</head>
+
+<body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="mosh-preloader"></div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area clearfix">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Menu Area Start -->
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="index.html"><img src="~/wwwroot/img/myimages/nss_logo_2.png" alt="logo"></a>
+
+                            <!-- Menu Area -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                    <li class="nav-item" id="home">
+                                        <a href="@Url.Action("Index", "Home")" class="nav-link">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" id="about">
+                                        <a href="@Url.Action("Index", "About")" class="nav-link">
+                                            About us
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown" id="service">
+                                        <a class="nav-link dropdown-toggle" href="#" id="moshDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                        <div class="dropdown-menu" aria-labelledby="moshDropdown">
+                                            <a href="@Url.Action("Cybersecurity", "Services")" class="dropdown-item">
+                                                Cyber Security
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("SocialMediaMonitoring", "Services")" class="dropdown-item">
+                                                Social Media Monitoring
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("RiskAdvisory", "Services")" class="dropdown-item">
+                                                Risk Advisory Services
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("BrandProtection", "Services")" class="dropdown-item">
+                                                Brand Protection
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("RiskAssessment", "Services")" class="dropdown-item">
+                                                Risk Assessment & Analysis
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("ProtectiveServices", "Services")" class="dropdown-item">
+                                                Protective Services
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("DigitalForensics", "Services")" class="dropdown-item">
+                                                Digital Forensics
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("ProductDevelopment", "Services")" class="dropdown-item">
+                                                Product Development
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="@Url.Action("DueDiligence", "Services")" class="dropdown-item">
+                                                Due Diligence
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" id="training">
+                                        <a href="@Url.Action("Index", "Training")" class="nav-link">
+                                            Training
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" id="career">
+                                        <a href="@Url.Action("Index", "Career")" class="nav-link">
+                                            Career
+                                        </a>
+                                    </li>
+                                    <li class="nav-item" id="contact">
+                                        <a href="@Url.Action("Index", "Contact")" class="nav-link">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    @RenderBody()
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area clearfix">
+        <!-- Top Fotter Area -->
+        <div class="top-footer-area section_padding_100_0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <p class="mb-50 d-block"><img src="~/wwwroot/img/myimages/nss_logo_2.png" alt=""></p>
+                            <p style="text-align: justify">
+                                We offer a full range of Security Consulting, Information Security Training and Customized Technology solutions to Government, Quasi-Government and Corporate worldwide.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5 style="margin-left:30px">Fast links</h5>
+                            <ul>
+                                <li style="list-style:none">
+                                    <a href="@Url.Action("Index", "Home")" class="nav-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li style="list-style:none">
+                                    <a href="@Url.Action("Index", "About")" class="nav-link">
+                                        About us
+                                    </a>
+                                </li>
+                                <li style="list-style:none">
+                                    <a href="@Url.Action("#services", "Index", "Home")" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li style="list-style:none">
+                                    <a href="@Url.Action("Index", "Training")" class="nav-link">
+                                        Training
+                                    </a>
+                                </li>
+                                <li style="list-style:none">
+                                    <a href="@Url.Action("Index", "Career")" class="nav-link">
+                                        Career
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Offices at</h5>
+                            <div class="footer-single--blog-post">
+                                <p>India</p>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <p>Malaysia</p>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <p>UAE</p>
+                            </div>
+                            <div class="footer-single--blog-post">
+                                <p>Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-100">
+                            <h5>Contact Info</h5>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="~/wwwroot/img/core-img/map.png" alt="">
+                                </div>
+                                <p>A-433, 4th Floor, Ansal Chambers-II<br>Bhikaji Cama Place, New Delhi</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="~/wwwroot/img/core-img/call.png" alt="">
+                                </div>
+                                <p>Office: +11-26183970</p>
+                            </div>
+                            <div class="footer-single-contact-info d-flex">
+                                <div class="contact-icon">
+                                    <img src="~/wwwroot/img/core-img/message.png" alt="">
+                                </div>
+                                <p>contact@mynetsec.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fotter Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
+                            <div class="copyright-text">
+                                <p>
+
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved | NSS
+
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="~/wwwroot/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="~/wwwroot/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="~/wwwroot/js/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="~/wwwroot/js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="~/wwwroot/js/active.js"></script>
+    <!-- NSS in Press-->
+    <script src="~/wwwroot/js/remodal.js"></script>
+    <!--tingle modal js-->
+    <script src="~/wwwroot/js/tingle.js"></script>
+    @if ((String)ViewData["Title"] == "Home Page")
+    {
+        <script>
+            $('ul.nav').find('li.active').removeClass('active');
+            $('#home').addClass('active');
+        </script>
+    }
+
+    @if ((String)ViewData["Title"] == "About")
+    {
+        <script>
+            $('ul.nav').find('li.active').removeClass('active');
+            $('#about').addClass('active');
+        </script>
+    }
+
+    @if ((String)ViewData["Title"] == "Career")
+    {
+        <script>
+            $('ul.nav').find('li.active').removeClass('active');
+            $('#career').addClass('active');
+        </script>
+    }
+
+    @if ((String)ViewData["Title"] == "Contact")
+    {
+        <script>
+            $('ul.nav').find('li.active').removeClass('active');
+            $('#contact').addClass('active');
+        </script>
+    }
+
+    @if ((String)ViewData["Title"] == "Training")
+    {
+        <script>
+            $('ul.nav').find('li.active').removeClass('active');
+            $('#training').addClass('active');
+        </script>
+    }
+    @{
+        String title = (String)ViewData["Title"];
+        if (title == "BCP" || title == "BrandProtection" || title == "Cybersecurity" || title == "DigitalForensics" || title == "IncidentReporting" || title == "PhysicalRiskAssessment" || title == "ProtectiveServices" || title == "SocialMediaMonitoring" || title == "TravelAdvisory")
+        {
+            <script>
+                $('ul.nav').find('li.active').removeClass('active');
+                $('#service').addClass('active');
+            </script>
+        }
+    }
+
+
+
+</body>
+
+</html>

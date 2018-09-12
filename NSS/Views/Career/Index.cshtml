@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Career";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- ***** Breadcumb Area Start ***** -->
+<div class="mosh-breadcumb-area" style="background-image: url(../../wwwroot/img/core-img/breadcumb.png);">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12">
+                <div class="bradcumbContent">
+                    <h2>Career</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ***** Breadcumb Area End ***** -->
+<!-- ***** Contact Area Start ***** -->
+<section style="margin-bottom:100px">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form Area -->
+            <div class="col-12 col-md-8">
+                <h2>Opportunities</h2>
+                <div class="col-12 col-md-10" style="margin-top:30px">
+                    <div class="accordions mb-100" id="accordion" role="tablist" aria-multiselectable="true">
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseOne" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseOne">
+                                    Research Analyst
+                                    <span class="accor-open">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="accor-close">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </h6>
+                            <div id="collapseOne" class="accordion-content collapse">
+                                <p>
+                                    <b>Location</b>: New Delhi, India
+                                    <br> 2-3 years of experience in the field required.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" class="collapsed" aria-expanded="true" aria-controls="collapseTwo" data-parent="#accordion" data-toggle="collapse"
+                                   href="#collapseTwo">
+                                    Cyber Security Consultant
+                                    <span class="accor-open">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="accor-close">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </h6>
+                            <div id="collapseTwo" class="accordion-content collapse">
+                                <p>
+                                    <b>Location</b>: New Delhi, India
+                                    <br> 2-3 years of experience in the field required.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- single accordian area start -->
+                        <div class="panel single-accordion">
+                            <h6>
+                                <a role="button" aria-expanded="true" aria-controls="collapseThree" class="collapsed" data-parent="#accordion" data-toggle="collapse"
+                                   href="#collapseThree">
+                                    Internship
+                                    <span class="accor-open">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="accor-close">
+                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+                            </h6>
+                            <div id="collapseThree" class="accordion-content collapse">
+                                <p>
+                                    <b>Location</b>: New Delhi, India
+                                    <br>Internship Opportunities in various fields of service. Interested applicants can
+                                    mail their resume at:
+                                    <font style="color:blue">contact@mynetsec.com</font>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="contact-form-area">
+                    <h2>Contact Form</h2>
+                    <p>To enquire about any post please contact us.</p>
+                    <form action="mailto:contact@mynetsec.com" type="post">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="col-12">
+                                <select type="text" class="form-control" id="select" placeholder="Post" style="height:50px">
+                                    <option style="font-size: 17px; color: rgb(177, 177, 177)">Select</option>
+                                    <option style="font-size: 17px; color: rgb(177, 177, 177)">Research Analyst</option>
+                                    <option style="font-size: 17px; color: rgb(177, 177, 177)">Cyber Security Consultant</option>
+                                    <option style="font-size: 17px; color: rgb(177, 177, 177)">Java and Android Developer</option>
+                                    <option style="font-size: 17px; color: rgb(177, 177, 177)">Internship</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn mosh-btn mt-50" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
